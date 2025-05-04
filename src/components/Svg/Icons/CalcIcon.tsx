@@ -1,0 +1,39 @@
+import React from "react";
+import Svg from "../Svg";
+import { SvgProps } from "../types";
+
+const Icon: React.FC<SvgProps> = (props) => {
+  return (
+    <svg width="100%" height="51" viewBox="0 0 1420 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_i_1258_18227)">
+        <path d="M0 10C0 4.47715 4.47715 0 10 0L631 0H788.5H1410C1415.52 0 1420 4.47715 1420 10V41C1420 46.5228 1415.52 51 1410 51H850.164C843.266 51 836.579 48.6231 831.229 44.2695L796.771 16.2305C791.421 11.8769 784.734 9.5 777.836 9.5H641.664C634.766 9.5 628.079 11.8769 622.729 16.2305L588.271 44.2695C582.921 48.6231 576.234 51 569.336 51H9.99999C4.47714 51 0 46.5228 0 41V10Z" fill="url(#paint0_linear_1258_18227)" fill-opacity="0.15"/>
+        </g>
+        <text opacity="0.7" fill="#8687BC" font-family="Geist" font-size="16" font-weight="600" letter-spacing="-0.02em" text-anchor="middle">
+            <tspan x="256.242" y="32.6">{props.text1}</tspan>
+        </text>
+        <text fill="#75C724" font-family="Geist" font-size="18" font-weight="500" letter-spacing="-0.02em" text-anchor="middle">
+            <tspan x="710.333" y="33.3">{props.apy1}</tspan>
+        </text>
+        <text opacity="0.7" fill="#8687BC" font-family="Geist" font-size="16" font-weight="600" letter-spacing="-0.02em" text-anchor="middle">
+            <tspan x="1102.13" y="32.6">{props.text2}</tspan>
+        </text>
+        <defs>
+        <filter id="filter0_i_1258_18227" x="0" y="0" width="1420" height="51" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="-2"/>
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0.396078 0 0 0 0 0.403922 0 0 0 0 0.819608 0 0 0 0.1 0"/>
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1258_18227"/>
+        </filter>
+        <linearGradient id="paint0_linear_1258_18227" x1="695" y1="51" x2="695" y2="-1.25081e-06" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#6567D1"/>
+        <stop offset="1" stop-color="#6567D1" stop-opacity="0"/>
+        </linearGradient>
+        </defs>
+    </svg>
+  );
+};
+
+export default Icon;

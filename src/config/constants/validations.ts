@@ -1,0 +1,16 @@
+export enum Validations {
+  Wallet = "wallet",
+  ChainID = "chainID",
+  SelectLoan = "selectLoan",
+  CollateralType = "collateralType",
+  Collateral = "collateral",
+  Amount = "amount",
+  GovTier = "govtier",
+  NoTier = "notier",
+  TokenValidation = "tokensValidation",
+  AllowedSingleNft = "isSingleNft",
+  AllowedMultiNft = "isMultiNft",
+  AllowedSingleToken = "isSingleToken",
+  AllowedMultiToken = "isMultiToken",
+  WalletConnectionProgress = "connectionProgress",
+}

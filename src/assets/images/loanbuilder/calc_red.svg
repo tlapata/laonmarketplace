@@ -1,0 +1,20 @@
+<svg width="211" height="128" viewBox="0 0 211 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.15" d="M0.0283203 52H207.987V126H0.0283203V52Z" fill="url(#paint0_radial_997_20783)"/>
+<line x1="0.0283204" y1="127" x2="207.987" y2="127" stroke="url(#paint1_linear_997_20783)" stroke-width="2"/>
+<rect opacity="0.1" width="207.959" height="74" transform="matrix(1 0 0 -1 0.0283203 74)" fill="url(#paint2_radial_997_20783)"/>
+<defs>
+<radialGradient id="paint0_radial_997_20783" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(104.008 126) rotate(-90) scale(37 103.979)">
+<stop stop-color="#E83232"/>
+<stop offset="1" stop-color="#E83232" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="paint1_linear_997_20783" x1="0.0283203" y1="128.5" x2="207.987" y2="128.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E83232" stop-opacity="0"/>
+<stop offset="0.5" stop-color="#E83232"/>
+<stop offset="1" stop-color="#E83232" stop-opacity="0"/>
+</linearGradient>
+<radialGradient id="paint2_radial_997_20783" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(103.979 74) rotate(-90) scale(37 103.979)">
+<stop stop-color="#E83232"/>
+<stop offset="1" stop-color="#E83232" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

@@ -1,0 +1,2 @@
+export const WBNB = "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
+export const GOV_TOKEN_ADDRESS = "0xcc7a91413769891de2e9ebbfc96d2eb1874b5760"

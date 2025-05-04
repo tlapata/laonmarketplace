@@ -1,0 +1,7990 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_govGovToken",
+        "type": "address"
+      }
+    ],
+    "name": "UpdateGovGovToken",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_govToken",
+        "type": "address"
+      }
+    ],
+    "name": "UpdateGovToken",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_govToken",
+        "type": "address"
+      }
+    ],
+    "name": "setGovToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_govGovToken",
+        "type": "address"
+      }
+    ],
+    "name": "setgovGovToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_newAdmin",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "addGovIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editGovIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addSp",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editSp",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addGovAdmin",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editGovAdmin",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addBridge",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editBridge",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addPool",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editPool",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "superAdmin",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct LibAdminStorage.AdminAccess",
+        "name": "_adminAccess",
+        "type": "tuple"
+      }
+    ],
+    "name": "addAdmin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_superAdmin",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_admin1",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_admin2",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_admin3",
+        "type": "address"
+      }
+    ],
+    "name": "adminRegistryInit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_newAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "approveAddedAdmin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_admin",
+        "type": "address"
+      }
+    ],
+    "name": "approveEditAdmin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_admin",
+        "type": "address"
+      }
+    ],
+    "name": "approveRemovedAdmin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_admin",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "addGovIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editGovIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addSp",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editSp",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addGovAdmin",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editGovAdmin",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addBridge",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editBridge",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addPool",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editPool",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "superAdmin",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct LibAdminStorage.AdminAccess",
+        "name": "_adminAccess",
+        "type": "tuple"
+      }
+    ],
+    "name": "editAdmin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAllApproved",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_approvedAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "getApprovedAdminRoles",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "addGovIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editGovIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addSp",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editSp",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addGovAdmin",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editGovAdmin",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addBridge",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editBridge",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addPool",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editPool",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "superAdmin",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct LibAdminStorage.AdminAccess",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_addedAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "getApprovedByAdmins",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_editAdminAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getEditbyAdmins",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_key",
+        "type": "uint8"
+      }
+    ],
+    "name": "getPendingAdmin",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_removedAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "getRemovedByAdmins",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_addAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "getpendingAddedAdminRoles",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "addGovIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editGovIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addSp",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editSp",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addGovAdmin",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editGovAdmin",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addBridge",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editBridge",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addPool",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editPool",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "superAdmin",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct LibAdminStorage.AdminAccess",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_addAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "getpendingEditedAdminRoles",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "addGovIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editGovIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addSp",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editSp",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addGovAdmin",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editGovAdmin",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addBridge",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editBridge",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addPool",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editPool",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "superAdmin",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct LibAdminStorage.AdminAccess",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_addAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "getpendingRemovedAdminRoles",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "addGovIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editGovIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addSp",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editSp",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addGovAdmin",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editGovAdmin",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addBridge",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editBridge",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addPool",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editPool",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "superAdmin",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct LibAdminStorage.AdminAccess",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "admin",
+        "type": "address"
+      }
+    ],
+    "name": "isAddGovAdminRole",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "admin",
+        "type": "address"
+      }
+    ],
+    "name": "isAddSpAccess",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "admin",
+        "type": "address"
+      }
+    ],
+    "name": "isAddTokenRole",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_newAdmin",
+        "type": "address"
+      },
+      {
+        "internalType": "uint8",
+        "name": "_key",
+        "type": "uint8"
+      }
+    ],
+    "name": "isDoneByAll",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "admin",
+        "type": "address"
+      }
+    ],
+    "name": "isEditAdminAccessGranted",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "admin",
+        "type": "address"
+      }
+    ],
+    "name": "isEditSpAccess",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "admin",
+        "type": "address"
+      }
+    ],
+    "name": "isEditTokenRole",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "admin",
+        "type": "address"
+      }
+    ],
+    "name": "isSuperAdminAccess",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_admin",
+        "type": "address"
+      },
+      {
+        "internalType": "uint8",
+        "name": "_key",
+        "type": "uint8"
+      }
+    ],
+    "name": "rejectAdmin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_admin",
+        "type": "address"
+      }
+    ],
+    "name": "removeAdmin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_newSuperAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "transferSuperAdmin",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_admin",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "addGovIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editGovIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addSp",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editSp",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addGovAdmin",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editGovAdmin",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addBridge",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editBridge",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addPool",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editPool",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "superAdmin",
+            "type": "bool"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct LibAdminStorage.AdminAccess",
+        "name": "_adminAccess",
+        "type": "tuple"
+      }
+    ],
+    "name": "AdminEditedApprovedByAll",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "_key",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_newAdmin",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_rejectByAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "AdminRejected",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_admin",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_removedByAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "AdminRemovedByAll",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_newAdmin",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_addByAdmin",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint8",
+        "name": "_key",
+        "type": "uint8"
+      }
+    ],
+    "name": "NewAdminApproved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_newAdmin",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "addGovIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editGovIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addSp",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editSp",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addGovAdmin",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editGovAdmin",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addBridge",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editBridge",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addPool",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editPool",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "superAdmin",
+            "type": "bool"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct LibAdminStorage.AdminAccess",
+        "name": "_adminAccess",
+        "type": "tuple"
+      }
+    ],
+    "name": "NewAdminApprovedByAll",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_superAdmin",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "addGovIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editGovIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addSp",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editSp",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addGovAdmin",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editGovAdmin",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addBridge",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editBridge",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "addPool",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "editPool",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "superAdmin",
+            "type": "bool"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct LibAdminStorage.AdminAccess",
+        "name": "_adminAccess",
+        "type": "tuple"
+      }
+    ],
+    "name": "SuperAdminOwnershipTransfer",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_claimTokenAddress",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "tokenType",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address[]",
+            "name": "pegOrSunTokens",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "pegOrSunTokensPricePercentage",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "address",
+            "name": "dexRouter",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct LibClaimTokenStorage.ClaimTokenData",
+        "name": "_claimtokendata",
+        "type": "tuple"
+      }
+    ],
+    "name": "addClaimToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_claimTokenAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "_status",
+        "type": "bool"
+      }
+    ],
+    "name": "enableClaimToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_sunToken",
+        "type": "address"
+      }
+    ],
+    "name": "getClaimTokenofSUNToken",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_claimTokenAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getClaimTokensData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "tokenType",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address[]",
+            "name": "pegOrSunTokens",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "pegOrSunTokensPricePercentage",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "address",
+            "name": "dexRouter",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct LibClaimTokenStorage.ClaimTokenData",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_claimTokenAddress",
+        "type": "address"
+      }
+    ],
+    "name": "isClaimToken",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_claimTokenAddress",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "tokenType",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address[]",
+            "name": "pegOrSunTokens",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "pegOrSunTokensPricePercentage",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "address",
+            "name": "dexRouter",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct LibClaimTokenStorage.ClaimTokenData",
+        "name": "_newClaimtokendata",
+        "type": "tuple"
+      }
+    ],
+    "name": "updateClaimToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "claimToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "tokenType",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "pegTokens",
+        "type": "address[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[]",
+        "name": "pegTokensPricePercentage",
+        "type": "uint256[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "dexRouter",
+        "type": "address"
+      }
+    ],
+    "name": "ClaimTokenAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "claimToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "enabled",
+        "type": "bool"
+      }
+    ],
+    "name": "ClaimTokenEnabled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "claimToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "tokenType",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "pegTokens",
+        "type": "address[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[]",
+        "name": "pegTokensPricePercentage",
+        "type": "uint256[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "dexRouter",
+        "type": "address"
+      }
+    ],
+    "name": "ClaimTokenUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "GToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "SPToken",
+        "type": "address"
+      }
+    ],
+    "name": "GTokenDeployed",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_spToken",
+        "type": "address"
+      }
+    ],
+    "name": "deployGToken",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "_gToken",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_newTierLevel",
+        "type": "bytes32"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "govHoldings",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "loantoValue",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "govIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "singleToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "multiToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "singleNFT",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "multiNFT",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "reverseLoan",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct LibGovTierStorage.TierData",
+        "name": "_tierData",
+        "type": "tuple"
+      }
+    ],
+    "name": "addTierLevel",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_userAddress",
+        "type": "address[]"
+      },
+      {
+        "internalType": "bytes32[]",
+        "name": "_tierLevel",
+        "type": "bytes32[]"
+      }
+    ],
+    "name": "addWalletTierLevel",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getGovTierLevelKeys",
+    "outputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "",
+        "type": "bytes32[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_tierLevelKey",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getSingleTierData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "govHoldings",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "loantoValue",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "govIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "singleToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "multiToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "singleNFT",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "multiNFT",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "reverseLoan",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct LibGovTierStorage.TierData",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_userAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getWalletTier",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_tierLevel",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_bronze",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_silver",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_gold",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_platinum",
+        "type": "bytes32"
+      }
+    ],
+    "name": "govTierFacetInit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_existingTierLevel",
+        "type": "bytes32"
+      }
+    ],
+    "name": "removeTierLevel",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "_tierLevelKeys",
+        "type": "bytes32[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "govHoldings",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "loantoValue",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "govIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "singleToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "multiToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "singleNFT",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "multiNFT",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "reverseLoan",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct LibGovTierStorage.TierData[]",
+        "name": "_newTierData",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "saveTierLevel",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_updatedTierLevelKey",
+        "type": "bytes32"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "govHoldings",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "loantoValue",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "govIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "singleToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "multiToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "singleNFT",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "multiNFT",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "reverseLoan",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct LibGovTierStorage.TierData",
+        "name": "_newTierData",
+        "type": "tuple"
+      }
+    ],
+    "name": "updateTierLevel",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_userAddress",
+        "type": "address[]"
+      },
+      {
+        "internalType": "bytes32[]",
+        "name": "_tierLevel",
+        "type": "bytes32[]"
+      }
+    ],
+    "name": "updateWalletTier",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_userAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_tierLevel",
+        "type": "bytes32"
+      }
+    ],
+    "name": "AddedWalletTier",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_newTierLevel",
+        "type": "bytes32"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "govHoldings",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "loantoValue",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "govIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "singleToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "multiToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "singleNFT",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "multiNFT",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "reverseLoan",
+            "type": "bool"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct LibGovTierStorage.TierData",
+        "name": "_tierData",
+        "type": "tuple"
+      }
+    ],
+    "name": "TierLevelAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_removedtierLevel",
+        "type": "bytes32"
+      }
+    ],
+    "name": "TierLevelRemoved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_updatetierLevel",
+        "type": "bytes32"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "govHoldings",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "loantoValue",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "govIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "singleToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "multiToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "singleNFT",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "multiNFT",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "reverseLoan",
+            "type": "bool"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct LibGovTierStorage.TierData",
+        "name": "_tierData",
+        "type": "tuple"
+      }
+    ],
+    "name": "TierLevelUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_wallet",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_tierLevel",
+        "type": "bytes32"
+      }
+    ],
+    "name": "UpdatedWalletTier",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_tier1",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_tier2",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_tier3",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_tier4",
+        "type": "bytes32"
+      }
+    ],
+    "name": "GovTierFacetInitialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum LibMarketStorage.LoanStatus",
+        "name": "loanStatus",
+        "type": "uint8"
+      }
+    ],
+    "name": "AutoSellOFFLiquidated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum LibMarketStorage.LoanStatus",
+        "name": "loanStatus",
+        "type": "uint8"
+      }
+    ],
+    "name": "AutoSellONLiquidated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "loanId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_borrower",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_lender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_paybackAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum LibMarketStorage.LoanStatus",
+        "name": "loanStatus",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_earnedAPY",
+        "type": "uint256"
+      }
+    ],
+    "name": "FullTokensLoanPaybacked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_newLiquidator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "_liquidatorAccess",
+        "type": "bool"
+      }
+    ],
+    "name": "LiquidatorUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_newLiquidator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "_liquidatorAccess",
+        "type": "bool"
+      }
+    ],
+    "name": "NewLiquidatorApproved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "loanId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_borrower",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_lender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "paybackAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "PartialTokensLoanPaybacked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "srcAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "spendAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "returnAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "SwapToken",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "tokenAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "walletAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "withdrawAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "WithdrawAltcoin",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "tokenAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "walletAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "withdrawAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "WithdrawStable",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_liquidator",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "liquidator2",
+        "type": "address"
+      }
+    ],
+    "name": "LiquidatorInitialized",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_collateralTokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_amounts",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "approveCollateralTo1inch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAllLiquidators",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_collateral",
+        "type": "address"
+      }
+    ],
+    "name": "getCollateralWithdrawableToken",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loanIdToken",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLTVToken",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_liquidator",
+        "type": "address"
+      }
+    ],
+    "name": "getLiquidatorAccess",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_stable",
+        "type": "address"
+      }
+    ],
+    "name": "getStableCoinWithdrawable",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loanIdToken",
+        "type": "uint256"
+      }
+    ],
+    "name": "getTotalPaybackAmountToken",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "loanAmountwithEarnedAPYFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "earnedAPYFee",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loanIdToken",
+        "type": "uint256"
+      }
+    ],
+    "name": "isLiquidationPendingToken",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "contract IAggregationExecutor",
+            "name": "executor",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "contract IERC20",
+                "name": "srcToken",
+                "type": "address"
+              },
+              {
+                "internalType": "contract IERC20",
+                "name": "dstToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address payable",
+                "name": "srcReceiver",
+                "type": "address"
+              },
+              {
+                "internalType": "address payable",
+                "name": "dstReceiver",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minReturnAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "flags",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct SwapDescription",
+            "name": "desc",
+            "type": "tuple"
+          },
+          {
+            "internalType": "bytes",
+            "name": "permit",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bytes",
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct SwapInfo[]",
+        "name": "swapInfo",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "liquidateLoanToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_liquidator1",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_liquidator2",
+        "type": "address"
+      }
+    ],
+    "name": "liquidatorFacetInit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_paybackAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "paybackToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_newLiquidators",
+        "type": "address[]"
+      }
+    ],
+    "name": "setLiquidator",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_liquidatorWallet",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "_liquidatorRole",
+        "type": "bool"
+      }
+    ],
+    "name": "updateLiquidator",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_walletAddress",
+        "type": "address"
+      }
+    ],
+    "name": "withdrawExceedAltcoins",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_walletAddress",
+        "type": "address"
+      }
+    ],
+    "name": "withdrawStable",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "nftLoanId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum LibMarketStorage.LoanStatus",
+        "name": "loanStatus",
+        "type": "uint8"
+      }
+    ],
+    "name": "AutoLiquidatedNFT",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "nftloanId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_borrower",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum LibMarketStorage.LoanStatus",
+        "name": "loanStatus",
+        "type": "uint8"
+      }
+    ],
+    "name": "LoanOfferCancelNFT",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address[]",
+            "name": "stakedCollateralNFTsAddress",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "stakedCollateralNFTId",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "stakedNFTPrice",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "loanAmountInBorrowed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint32",
+            "name": "apyOffer",
+            "type": "uint32"
+          },
+          {
+            "internalType": "enum LibMarketStorage.LoanStatus",
+            "name": "loanStatus",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "termsLengthInDays",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isInsured",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "borrowStableCoin",
+            "type": "address"
+          },
+          {
+            "internalType": "enum LibMarketStorage.TierType",
+            "name": "tierType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unlockTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ltvpercentage",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct LibMarketStorage.LoanDetailsNFT",
+        "name": "loanDetailsNFT",
+        "type": "tuple"
+      }
+    ],
+    "name": "LoanOfferCreatedNFT",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "nftLoanId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_lender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_loanAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_termsLengthInDays",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_APYOffer",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "stakedCollateralNFTsAddress",
+        "type": "address[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[]",
+        "name": "stakedCollateralNFTId",
+        "type": "uint256[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[]",
+        "name": "stakedNFTPrice",
+        "type": "uint256[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_borrowStableCoin",
+        "type": "address"
+      }
+    ],
+    "name": "NFTLoanOfferActivated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address[]",
+            "name": "stakedCollateralNFTsAddress",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "stakedCollateralNFTId",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "stakedNFTPrice",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "loanAmountInBorrowed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint32",
+            "name": "apyOffer",
+            "type": "uint32"
+          },
+          {
+            "internalType": "enum LibMarketStorage.LoanStatus",
+            "name": "loanStatus",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "termsLengthInDays",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isInsured",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "borrowStableCoin",
+            "type": "address"
+          },
+          {
+            "internalType": "enum LibMarketStorage.TierType",
+            "name": "tierType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unlockTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ltvpercentage",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct LibMarketStorage.LoanDetailsNFT",
+        "name": "loanDetailsNFT",
+        "type": "tuple"
+      }
+    ],
+    "name": "NFTLoanOfferAdjusted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "nftLoanId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_borrower",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum LibMarketStorage.LoanStatus",
+        "name": "loanStatus",
+        "type": "uint8"
+      }
+    ],
+    "name": "NFTLoanPaybacked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum LibMarketStorage.LoanStatus",
+        "name": "loanStatus",
+        "type": "uint8"
+      }
+    ],
+    "name": "AutoLiquidatedEth",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "loanId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_borrower",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum LibMarketStorage.LoanStatus",
+        "name": "loanStatus",
+        "type": "uint8"
+      }
+    ],
+    "name": "FullLoanPaybacked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum LibMarketStorage.LoanStatus",
+        "name": "loanStatus",
+        "type": "uint8"
+      }
+    ],
+    "name": "LiquidatedCollaterals",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "loanId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_lender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_stableCoinAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "_autoSell",
+        "type": "bool"
+      }
+    ],
+    "name": "LoanOfferActivated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "loanAmountInBorrowed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "termsLengthInDays",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint32",
+            "name": "apyOffer",
+            "type": "uint32"
+          },
+          {
+            "internalType": "bool",
+            "name": "isInsured",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "borrowStableCoin",
+            "type": "address"
+          },
+          {
+            "internalType": "enum LibMarketStorage.LoanStatus",
+            "name": "loanStatus",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address payable",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "paybackAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unlockTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ltvpercentage",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct LibMarketStorage.LoanDetailsNetwork",
+        "name": "_loanDetails",
+        "type": "tuple"
+      }
+    ],
+    "name": "LoanOfferAdjusted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "loanId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_borrower",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum LibMarketStorage.LoanStatus",
+        "name": "loanStatus",
+        "type": "uint8"
+      }
+    ],
+    "name": "LoanOfferCancel",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "loanAmountInBorrowed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "termsLengthInDays",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint32",
+            "name": "apyOffer",
+            "type": "uint32"
+          },
+          {
+            "internalType": "bool",
+            "name": "isInsured",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "borrowStableCoin",
+            "type": "address"
+          },
+          {
+            "internalType": "enum LibMarketStorage.LoanStatus",
+            "name": "loanStatus",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address payable",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "paybackAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unlockTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ltvpercentage",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct LibMarketStorage.LoanDetailsNetwork",
+        "name": "_loanDetails",
+        "type": "tuple"
+      }
+    ],
+    "name": "LoanOfferCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "loanId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "paybackAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_borrower",
+        "type": "address"
+      }
+    ],
+    "name": "PartialLoanPaybacked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "srcAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "spendAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "returnAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "SwapEth",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "walletAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "withdrawAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "WithdrawNetworkCoin",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "tokenAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "walletAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "withdrawAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "WithdrawToken",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "loanAmountInBorrowed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "termsLengthInDays",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint32",
+            "name": "apyOffer",
+            "type": "uint32"
+          },
+          {
+            "internalType": "bool",
+            "name": "isInsured",
+            "type": "bool"
+          },
+          {
+            "internalType": "address[]",
+            "name": "stakedCollateralTokens",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "stakedCollateralAmounts",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "address",
+            "name": "borrowStableCoin",
+            "type": "address"
+          },
+          {
+            "internalType": "enum LibMarketStorage.LoanStatus",
+            "name": "loanStatus",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "paybackAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool[]",
+            "name": "isMintSp",
+            "type": "bool[]"
+          },
+          {
+            "internalType": "enum LibMarketStorage.TierType",
+            "name": "tierType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unlockTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ltvpercentage",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct LibMarketStorage.LoanDetailsToken",
+        "name": "_loanDetails",
+        "type": "tuple"
+      }
+    ],
+    "name": "LoanOfferAdjustedToken",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "loanId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_borrower",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum LibMarketStorage.LoanStatus",
+        "name": "loanStatus",
+        "type": "uint8"
+      }
+    ],
+    "name": "LoanOfferCancelToken",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "loanAmountInBorrowed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "termsLengthInDays",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint32",
+            "name": "apyOffer",
+            "type": "uint32"
+          },
+          {
+            "internalType": "bool",
+            "name": "isInsured",
+            "type": "bool"
+          },
+          {
+            "internalType": "address[]",
+            "name": "stakedCollateralTokens",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "stakedCollateralAmounts",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "address",
+            "name": "borrowStableCoin",
+            "type": "address"
+          },
+          {
+            "internalType": "enum LibMarketStorage.LoanStatus",
+            "name": "loanStatus",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "paybackAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool[]",
+            "name": "isMintSp",
+            "type": "bool[]"
+          },
+          {
+            "internalType": "enum LibMarketStorage.TierType",
+            "name": "tierType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unlockTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ltvpercentage",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct LibMarketStorage.LoanDetailsToken",
+        "name": "_loanDetailsToken",
+        "type": "tuple"
+      }
+    ],
+    "name": "LoanOfferCreatedToken",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "loanId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_lender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_stableCoinAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "_autoSell",
+        "type": "bool"
+      }
+    ],
+    "name": "TokenLoanOfferActivated",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_stableCoinAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_autoSell",
+        "type": "bool"
+      }
+    ],
+    "name": "activateLoanEth",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "loanAmountInBorrowed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "termsLengthInDays",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint32",
+            "name": "apyOffer",
+            "type": "uint32"
+          },
+          {
+            "internalType": "bool",
+            "name": "isInsured",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "borrowStableCoin",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct LibMarketStorage.LoanDetailsNetworkData",
+        "name": "loanDetails",
+        "type": "tuple"
+      }
+    ],
+    "name": "createLoanEth",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      }
+    ],
+    "name": "ethLoanOfferCancel",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getActivatedLoanDetailsNetwork",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "lender",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "activationLoanTimeStamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoSell",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct LibMarketStorage.LenderDetails",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getBorrowerLoanNetwork",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "loanAmountInBorrowed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "termsLengthInDays",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint32",
+            "name": "apyOffer",
+            "type": "uint32"
+          },
+          {
+            "internalType": "bool",
+            "name": "isInsured",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "borrowStableCoin",
+            "type": "address"
+          },
+          {
+            "internalType": "enum LibMarketStorage.LoanStatus",
+            "name": "loanStatus",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address payable",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "paybackAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unlockTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ltvpercentage",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LibMarketStorage.LoanDetailsNetwork",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getCollateralsWithdrawableNetwork",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_networkLoanId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLtvNetworkLoan",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "collateralInBorrowed",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "borrower",
+        "type": "address"
+      }
+    ],
+    "name": "getMaxLoanAmountNetwork",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_networkLoanId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getTotalPaybackAmountNetwork",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "loanAmountwithEarnedAPYFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "earnedAPYFee",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_wallet",
+        "type": "address"
+      }
+    ],
+    "name": "getUserLoanActivateLimit",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_networkLoanId",
+        "type": "uint256"
+      }
+    ],
+    "name": "isLiquidationPendingNetwork",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "contract IAggregationExecutor",
+            "name": "executor",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "contract IERC20",
+                "name": "srcToken",
+                "type": "address"
+              },
+              {
+                "internalType": "contract IERC20",
+                "name": "dstToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address payable",
+                "name": "srcReceiver",
+                "type": "address"
+              },
+              {
+                "internalType": "address payable",
+                "name": "dstReceiver",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minReturnAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "flags",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct SwapDescription",
+            "name": "desc",
+            "type": "tuple"
+          },
+          {
+            "internalType": "bytes",
+            "name": "permit",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bytes",
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct SwapInfo",
+        "name": "swapInfo",
+        "type": "tuple"
+      }
+    ],
+    "name": "liquidateLoanNetwork",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_paybackAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "paybackEth",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loanIdAdjusted",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_newLoanAmountBorrowed",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_newTermsLengthInDays",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_newAPYOffer",
+        "type": "uint32"
+      },
+      {
+        "internalType": "bool",
+        "name": "_isInsured",
+        "type": "bool"
+      }
+    ],
+    "name": "updateEthLoan",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_withdrawAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address payable",
+        "name": "_walletAddress",
+        "type": "address"
+      }
+    ],
+    "name": "withdrawCoinFromNetwork",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_nftloanId",
+        "type": "uint256"
+      }
+    ],
+    "name": "activateNFTLoan",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address[]",
+            "name": "stakedCollateralNFTsAddress",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "stakedCollateralNFTId",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "stakedNFTPrice",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "loanAmountInBorrowed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint32",
+            "name": "apyOffer",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "termsLengthInDays",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isInsured",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "borrowStableCoin",
+            "type": "address"
+          },
+          {
+            "internalType": "enum LibMarketStorage.TierType",
+            "name": "tierType",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct LibMarketStorage.LoanDetailsNFTData",
+        "name": "loanDetailsNFT",
+        "type": "tuple"
+      }
+    ],
+    "name": "createLoanNft",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getActivatedNFTLoanOffers",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "lender",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "activationLoanTimeStamp",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LibMarketStorage.LenderDetailsNFT",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLoanOfferNFT",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address[]",
+            "name": "stakedCollateralNFTsAddress",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "stakedCollateralNFTId",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "stakedNFTPrice",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "loanAmountInBorrowed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint32",
+            "name": "apyOffer",
+            "type": "uint32"
+          },
+          {
+            "internalType": "enum LibMarketStorage.LoanStatus",
+            "name": "loanStatus",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "termsLengthInDays",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isInsured",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "borrowStableCoin",
+            "type": "address"
+          },
+          {
+            "internalType": "enum LibMarketStorage.TierType",
+            "name": "tierType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unlockTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ltvpercentage",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LibMarketStorage.LoanDetailsNFT",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      }
+    ],
+    "name": "liquidateBorrowerNFT",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_loanIds",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "nftLoanCancelBulk",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_nftLoanId",
+        "type": "uint256"
+      }
+    ],
+    "name": "nftLoanPaybackBeforeTermEnd",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_nftloanId",
+        "type": "uint256"
+      }
+    ],
+    "name": "nftloanOfferCancel",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "name": "onERC721Received",
+    "outputs": [
+      {
+        "internalType": "bytes4",
+        "name": "",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_nftloanIdAdjusted",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_newLoanAmountBorrowed",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_newTermsLengthInDays",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_newAPYOffer",
+        "type": "uint32"
+      },
+      {
+        "internalType": "bool",
+        "name": "_isInsured",
+        "type": "bool"
+      }
+    ],
+    "name": "updateNftLoan",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "loanIds",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "stableCoinAmounts",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "bool[]",
+        "name": "_autoSell",
+        "type": "bool[]"
+      }
+    ],
+    "name": "activateLoanToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "loanAmountInBorrowed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "termsLengthInDays",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint32",
+            "name": "apyOffer",
+            "type": "uint32"
+          },
+          {
+            "internalType": "bool",
+            "name": "isInsured",
+            "type": "bool"
+          },
+          {
+            "internalType": "address[]",
+            "name": "stakedCollateralTokens",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "stakedCollateralAmounts",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "address",
+            "name": "borrowStableCoin",
+            "type": "address"
+          },
+          {
+            "internalType": "bool[]",
+            "name": "isMintSp",
+            "type": "bool[]"
+          },
+          {
+            "internalType": "enum LibMarketStorage.TierType",
+            "name": "tierType",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct LibMarketStorage.LoanDetailsTokenData",
+        "name": "loanDetails",
+        "type": "tuple"
+      }
+    ],
+    "name": "createLoanToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getActivatedLoanDetailsToken",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "lender",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "activationLoanTimeStamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoSell",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct LibMarketStorage.LenderDetails",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLoanOffersToken",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "loanAmountInBorrowed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "termsLengthInDays",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint32",
+            "name": "apyOffer",
+            "type": "uint32"
+          },
+          {
+            "internalType": "bool",
+            "name": "isInsured",
+            "type": "bool"
+          },
+          {
+            "internalType": "address[]",
+            "name": "stakedCollateralTokens",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "stakedCollateralAmounts",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "address",
+            "name": "borrowStableCoin",
+            "type": "address"
+          },
+          {
+            "internalType": "enum LibMarketStorage.LoanStatus",
+            "name": "loanStatus",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "paybackAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool[]",
+            "name": "isMintSp",
+            "type": "bool[]"
+          },
+          {
+            "internalType": "enum LibMarketStorage.TierType",
+            "name": "tierType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unlockTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ltvpercentage",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LibMarketStorage.LoanDetailsToken",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_stakedCollateralTokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_stakedCollateralAmount",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "address",
+        "name": "_borrowStableCoin",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_loanAmountinStable",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_borrower",
+        "type": "address"
+      },
+      {
+        "internalType": "enum LibMarketStorage.TierType",
+        "name": "_tierType",
+        "type": "uint8"
+      }
+    ],
+    "name": "getltvCalculations",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "calculatedLTV",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxLoanAmountValue",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "collatetralInBorrowed",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_loanIds",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "tokenLoanCancelBulk",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loanId",
+        "type": "uint256"
+      }
+    ],
+    "name": "tokenLoanOfferCancel",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loanIdAdjusted",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_newLoanAmountBorrowed",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_newTermsLengthInDays",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_newAPYOffer",
+        "type": "uint32"
+      },
+      {
+        "internalType": "bool",
+        "name": "_isInsured",
+        "type": "bool"
+      }
+    ],
+    "name": "updateTokenLoan",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "collateralLimit",
+        "type": "uint256"
+      }
+    ],
+    "name": "AllowedMultiCollateral",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "ltvPercentage",
+        "type": "uint256"
+      }
+    ],
+    "name": "LTVPercentageUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "loansActivateLimit",
+        "type": "uint256"
+      }
+    ],
+    "name": "LoanActivateLimitUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "minLoanAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "MinLoanAmountUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "multicollateralLimit",
+        "type": "uint256"
+      }
+    ],
+    "name": "MultiCollateralLimit",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "networkTokenAddress",
+        "type": "address"
+      }
+    ],
+    "name": "NetworkTokenAddress",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "aggregator",
+        "type": "address"
+      }
+    ],
+    "name": "OneInchAggregator",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "lender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "value",
+        "type": "bool"
+      }
+    ],
+    "name": "WhitelistLenderUpdated",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "getLTVPercentage",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getLoanActivateLimit",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getMinLoanAmountAllowed",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getMultiCollateralLimit",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_lender",
+        "type": "address"
+      }
+    ],
+    "name": "isWhitelistedForActivation",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_1inchAggregatorV5",
+        "type": "address"
+      }
+    ],
+    "name": "set1InchAggregator",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_collateralLimit",
+        "type": "uint256"
+      }
+    ],
+    "name": "setAllowedMultiCollateralLimit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_ltvPercentage",
+        "type": "uint256"
+      }
+    ],
+    "name": "setLTVPercentage",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_minLoanAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "setMinLoanAmount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_networkTokenAddress",
+        "type": "address"
+      }
+    ],
+    "name": "setNetworkTokenAddress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_loansLimit",
+        "type": "uint256"
+      }
+    ],
+    "name": "setloanActivateLimit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_lender",
+        "type": "address"
+      }
+    ],
+    "name": "updateWhitelistAddress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_nftContract",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_allowedSunTokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "addNFTSunTokensinNftTier",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_nftContract",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_allowedNFTs",
+        "type": "address[]"
+      }
+    ],
+    "name": "addNFTTokensinNftTier",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_nftContract",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "isTraditional",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "spToken",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "traditionalTier",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "spTierId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address[]",
+            "name": "allowedNfts",
+            "type": "address[]"
+          },
+          {
+            "internalType": "address[]",
+            "name": "allowedSuns",
+            "type": "address[]"
+          }
+        ],
+        "internalType": "struct LibGovNFTTierStorage.NFTTierData",
+        "name": "_tierLevel",
+        "type": "tuple"
+      }
+    ],
+    "name": "addNftTierLevel",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "ltv",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "singleToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "multiToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "singleNft",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "multiNFT",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct LibGovNFTTierStorage.SingleSPTierData",
+        "name": "_spTierLevel",
+        "type": "tuple"
+      }
+    ],
+    "name": "addSingleSpTierLevel",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAllNftTierKeys",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAllSpTierKeys",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getNFTTierLength",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_nftContract",
+        "type": "address"
+      }
+    ],
+    "name": "getNftTierLevel",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "isTraditional",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "spToken",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "traditionalTier",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "spTierId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address[]",
+            "name": "allowedNfts",
+            "type": "address[]"
+          },
+          {
+            "internalType": "address[]",
+            "name": "allowedSuns",
+            "type": "address[]"
+          }
+        ],
+        "internalType": "struct LibGovNFTTierStorage.NFTTierData",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_spTierId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getSingleSpTier",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "ltv",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "singleToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "multiToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "singleNft",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "multiNFT",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct LibGovNFTTierStorage.SingleSPTierData",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_wallet",
+        "type": "address"
+      }
+    ],
+    "name": "getUserNftTier",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "isTraditional",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "spToken",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "traditionalTier",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "spTierId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address[]",
+            "name": "allowedNfts",
+            "type": "address[]"
+          },
+          {
+            "internalType": "address[]",
+            "name": "allowedSuns",
+            "type": "address[]"
+          }
+        ],
+        "internalType": "struct LibGovNFTTierStorage.NFTTierData",
+        "name": "nftTierData",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_contract",
+        "type": "address"
+      }
+    ],
+    "name": "removeNftTierLevel",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "removeSingleSpTierLevel",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_index",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_ltv",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_singleToken",
+        "type": "bool"
+      },
+      {
+        "internalType": "bool",
+        "name": "_multiToken",
+        "type": "bool"
+      },
+      {
+        "internalType": "bool",
+        "name": "_singleNft",
+        "type": "bool"
+      },
+      {
+        "internalType": "bool",
+        "name": "multiNFT",
+        "type": "bool"
+      }
+    ],
+    "name": "updateSingleSpTierLevel",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "nftContract",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "allowedSuns",
+        "type": "address[]"
+      }
+    ],
+    "name": "AddNFTSunTokensinNftTier",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "nftContract",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "allowedNfts",
+        "type": "address[]"
+      }
+    ],
+    "name": "AddNFTTokensinNftTier",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "nftContract",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "isTraditional",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "spToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "traditionalTier",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "spTierId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "allowedNfts",
+        "type": "address[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "allowedSuns",
+        "type": "address[]"
+      }
+    ],
+    "name": "NFTTierLevelAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "nftContract",
+        "type": "address"
+      }
+    ],
+    "name": "NftTierLevelRemoved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "spTierId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "ltv",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "singleToken",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "multiToken",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "singleNft",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "multiNFT",
+        "type": "bool"
+      }
+    ],
+    "name": "SingleSPTierLevelAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "spTierId",
+        "type": "uint256"
+      }
+    ],
+    "name": "SingleSPTierLevelRemoved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "spTierId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "ltv",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "singleToken",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "multiToken",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "singleNft",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "multiNFT",
+        "type": "bool"
+      }
+    ],
+    "name": "SingleSPTierLevelUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_tokenAddress",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address[]",
+        "name": "_pathRoute",
+        "type": "address[]"
+      }
+    ],
+    "name": "PathAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "swapRouterv3",
+        "type": "address"
+      }
+    ],
+    "name": "PriceConsumerInitialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "usdPriceAggrigator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "enabled",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "decimals",
+        "type": "uint256"
+      }
+    ],
+    "name": "PriceFeedAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address[]",
+        "name": "tokens",
+        "type": "address[]"
+      },
+      {
+        "indexed": true,
+        "internalType": "address[]",
+        "name": "chainlinkFeedAddress",
+        "type": "address[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool[]",
+        "name": "enabled",
+        "type": "bool[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[]",
+        "name": "decimals",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "PriceFeedAddedBulk",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "feedAddress",
+        "type": "address"
+      }
+    ],
+    "name": "PriceFeedAddressUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bool",
+        "name": "status",
+        "type": "bool"
+      }
+    ],
+    "name": "PriceFeedStatusUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "swapRouterv3",
+        "type": "address"
+      }
+    ],
+    "name": "SwapRouterUpdated",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_tokenAddress",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_chainlinkFeedAddress",
+        "type": "address[]"
+      },
+      {
+        "internalType": "bool[]",
+        "name": "_enabled",
+        "type": "bool[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_decimals",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "addBatchTokenChainlinkFeed",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_chainlinkFeedAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "_enabled",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_decimals",
+        "type": "uint256"
+      }
+    ],
+    "name": "addTokenChainlinkFeed",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_stakedCollateralAmounts",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_stakedCollateralTokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address",
+        "name": "_borrowedToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_loanAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateLTV",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getAggregatorData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract AggregatorV3Interface",
+            "name": "usdPriceAggrigator",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "enabled",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "decimals",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LibPriceConsumerStorage.ChainlinkDataFeed",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_altCoin",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_stableCoin",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_collateralAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getCollateralPriceinStable",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_stable",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_claimToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_sunToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getStableInSunToken",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_stableCoin",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_altCoin",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_stableCoinAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getStablePriceInCollateral",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_claimToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_stable",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_sunToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getSunTokenInStable",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_approvedCollateralToken",
+        "type": "address"
+      }
+    ],
+    "name": "getSwapInterface",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "priceFeedToken",
+        "type": "address"
+      }
+    ],
+    "name": "getTokenPriceFromChainlink",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenIn",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_tokenOut",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getTokenPriceFromDex",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "priceFeedToken",
+        "type": "address[]"
+      }
+    ],
+    "name": "getTokensPriceFromChainlink",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "tokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "int256[]",
+        "name": "prices",
+        "type": "int256[]"
+      },
+      {
+        "internalType": "uint8[]",
+        "name": "decimals",
+        "type": "uint8[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenAddress",
+        "type": "address"
+      }
+    ],
+    "name": "isChainlinkFeedEnabled",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_swapRouterv3",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_oracle",
+        "type": "address"
+      }
+    ],
+    "name": "priceConsumerFacetInit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenAddress",
+        "type": "address"
+      }
+    ],
+    "name": "updateAggregatorTokenStatus",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_chainlinkFeedAddress",
+        "type": "address"
+      }
+    ],
+    "name": "updateTokenPriceFeedAddress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "wethAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_factory",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "DEFAULT_FEE",
+    "outputs": [
+      {
+        "internalType": "uint24",
+        "name": "",
+        "type": "uint24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "FEE_1",
+    "outputs": [
+      {
+        "internalType": "uint24",
+        "name": "",
+        "type": "uint24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "FEE_2",
+    "outputs": [
+      {
+        "internalType": "uint24",
+        "name": "",
+        "type": "uint24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PERIOD",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenIn",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountIn",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_tokenOut",
+        "type": "address"
+      }
+    ],
+    "name": "consult",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "quoteAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "factory",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenIn",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_tokenOut",
+        "type": "address"
+      }
+    ],
+    "name": "getPool",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "pool",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pause",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "unpause",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "autoSellFeePercentage",
+        "type": "uint256"
+      }
+    ],
+    "name": "AutoSellFeeUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "tokenAddress",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "oldWalletAddress",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newWalletAddress",
+        "type": "address"
+      }
+    ],
+    "name": "BulkSpWAlletUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "govPlatformPercentage",
+        "type": "uint256"
+      }
+    ],
+    "name": "GovPlatformFeeUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "govPlatformFee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "govAutosellFee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "govThresholdFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "ProtocolRegistryInitialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "tokenAddress",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "walletAddress",
+        "type": "address"
+      }
+    ],
+    "name": "SPWalletAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "tokenAddress",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "walletAddress",
+        "type": "address"
+      }
+    ],
+    "name": "SPWalletRemoved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "tokenAddress",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "oldWalletAddress",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newWalletAddress",
+        "type": "address"
+      }
+    ],
+    "name": "SPWalletUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "tokenAddress",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address[]",
+        "name": "spWallets",
+        "type": "address[]"
+      }
+    ],
+    "name": "SPWalletsRemoved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "thresholdPercentageAutosellOff",
+        "type": "uint256"
+      }
+    ],
+    "name": "ThresholdFeeUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "tokenAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "status",
+        "type": "bool"
+      }
+    ],
+    "name": "TokenIsMintStatusUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "tokenAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "status",
+        "type": "bool"
+      }
+    ],
+    "name": "TokenStatusUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "tokenAddress",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "dexRouter",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "gToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "isMint",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum LibProtocolStorage.TokenType",
+        "name": "tokenType",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "isTokenEnabledAsCollateral",
+        "type": "bool"
+      }
+    ],
+    "name": "TokensAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "tokenAddress",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "dexRouter",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "gToken",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "isMint",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum LibProtocolStorage.TokenType",
+            "name": "tokenType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "isTokenEnabledAsCollateral",
+            "type": "bool"
+          }
+        ],
+        "indexed": true,
+        "internalType": "struct LibProtocolStorage.Market",
+        "name": "_marketData",
+        "type": "tuple"
+      }
+    ],
+    "name": "TokensUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "stableCoin",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "status",
+        "type": "bool"
+      }
+    ],
+    "name": "UpdatedStableCoinStatus",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_walletAddress",
+        "type": "address[]"
+      }
+    ],
+    "name": "addBulkSps",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_stableAddress",
+        "type": "address[]"
+      },
+      {
+        "internalType": "bool[]",
+        "name": "_status",
+        "type": "bool[]"
+      }
+    ],
+    "name": "addEditStableCoin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_walletAddress",
+        "type": "address"
+      }
+    ],
+    "name": "addSp",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_tokenAddress",
+        "type": "address[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "dexRouter",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "gToken",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "isMint",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum LibProtocolStorage.TokenType",
+            "name": "tokenType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "isTokenEnabledAsCollateral",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct LibProtocolStorage.Market[]",
+        "name": "marketData",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "addTokens",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_tokenAddress",
+        "type": "address[]"
+      },
+      {
+        "internalType": "bool[]",
+        "name": "_tokenStatus",
+        "type": "bool[]"
+      }
+    ],
+    "name": "changeTokensStatus",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenAddress",
+        "type": "address"
+      }
+    ],
+    "name": "changeisMintStatus",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAutosellPercentage",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getGovPlatformFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getSingleApproveToken",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "dexRouter",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "gToken",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "isMint",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum LibProtocolStorage.TokenType",
+            "name": "tokenType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "isTokenEnabledAsCollateral",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct LibProtocolStorage.Market",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getSingleTokenSps",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getThresholdPercentage",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getallApprovedTokens",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_walletAddress",
+        "type": "address"
+      }
+    ],
+    "name": "isAddedSPWallet",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_stable",
+        "type": "address"
+      }
+    ],
+    "name": "isStableApproved",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenAddress",
+        "type": "address"
+      }
+    ],
+    "name": "isSyntheticMintOn",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenAddress",
+        "type": "address"
+      }
+    ],
+    "name": "isTokenEnabledForCreateLoan",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "protocolRegistryFacetInit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_removeWalletAddress",
+        "type": "address[]"
+      }
+    ],
+    "name": "removeBulkSps",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_removeWalletAddress",
+        "type": "address"
+      }
+    ],
+    "name": "removeSp",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_percentage",
+        "type": "uint256"
+      }
+    ],
+    "name": "setAutosellFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_percentage",
+        "type": "uint256"
+      }
+    ],
+    "name": "setGovPlatfromFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_percentage",
+        "type": "uint256"
+      }
+    ],
+    "name": "setThresholdFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_oldWalletAddress",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_newWalletAddress",
+        "type": "address[]"
+      }
+    ],
+    "name": "updateBulkSps",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_oldWalletAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_newWalletAddress",
+        "type": "address"
+      }
+    ],
+    "name": "updateSp",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_tokenAddress",
+        "type": "address[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "dexRouter",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "gToken",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "isMint",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum LibProtocolStorage.TokenType",
+            "name": "tokenType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "isTokenEnabledAsCollateral",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct LibProtocolStorage.Market[]",
+        "name": "_marketData",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "updateTokens",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "name_",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "symbol_",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "_spToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_govDiamond",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "spender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "Approval",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "Transfer",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_owner",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "spender",
+        "type": "address"
+      }
+    ],
+    "name": "allowance",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "spender",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "approve",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "balanceOf",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "burnFrom",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "decimals",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getMaxTotalSupply",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "govDiamond",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "mint",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "name",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "spToken",
+    "outputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "spTokenExtras",
+    "outputs": [
+      {
+        "internalType": "contract IERC20Metadata",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "symbol",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "totalSupply",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "transfer",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "transferFrom",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_collateralTokeninStable",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_tierLevelLTVPercentage",
+        "type": "uint256"
+      }
+    ],
+    "name": "getMaxLoanAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_collateralTokeninStable",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_borrower",
+        "type": "address"
+      },
+      {
+        "internalType": "enum LibMarketStorage.TierType",
+        "name": "_tierType",
+        "type": "uint8"
+      }
+    ],
+    "name": "getMaxLoanAmountToValue",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "maxLoanAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "userWalletAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getTierDatabyGovBalance",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "govHoldings",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "loantoValue",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "govIntel",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "singleToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "multiToken",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "singleNFT",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "multiNFT",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "reverseLoan",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct LibGovTierStorage.TierData",
+        "name": "_tierData",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_wallet",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_loanAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_collateralinStable",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_stakedCollateralNFTs",
+        "type": "address[]"
+      },
+      {
+        "internalType": "enum LibMarketStorage.TierType",
+        "name": "_tierType",
+        "type": "uint8"
+      }
+    ],
+    "name": "isCreateLoanNftUnderTier",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "status",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_wallet",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_loanAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_collateralinStable",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_stakedCollateralTokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "enum LibMarketStorage.TierType",
+        "name": "_tierType",
+        "type": "uint8"
+      }
+    ],
+    "name": "isCreateLoanTokenUnderTier",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "status",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "nftContract",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "spAllowedNFTs",
+        "type": "address[]"
+      }
+    ],
+    "name": "AddVCNftTokens",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "nftContract",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "spAllowedTokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "AddVCSpTokens",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "nftContract",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "traditionalTier",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "spAllowedTokens",
+        "type": "address[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "spAllowedNFTs",
+        "type": "address[]"
+      }
+    ],
+    "name": "VCNFTTierAdded",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_vcnftContract",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "traditionalTier",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address[]",
+            "name": "spAllowedTokens",
+            "type": "address[]"
+          },
+          {
+            "internalType": "address[]",
+            "name": "spAllowedNFTs",
+            "type": "address[]"
+          }
+        ],
+        "internalType": "struct LibVCTierStorage.VCNFTTier",
+        "name": "_vcTierDetails",
+        "type": "tuple"
+      }
+    ],
+    "name": "addVCNFTTier",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_vcnftContract",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_nftAddresses",
+        "type": "address[]"
+      }
+    ],
+    "name": "addVCNftTokens",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_vcnftContract",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_spTokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "addVCSpTokens",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_wallet",
+        "type": "address"
+      }
+    ],
+    "name": "getUserVCNFTTier",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "traditionalTier",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address[]",
+            "name": "spAllowedTokens",
+            "type": "address[]"
+          },
+          {
+            "internalType": "address[]",
+            "name": "spAllowedNFTs",
+            "type": "address[]"
+          }
+        ],
+        "internalType": "struct LibVCTierStorage.VCNFTTier",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_vcTierNFT",
+        "type": "address"
+      }
+    ],
+    "name": "getVCTier",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "traditionalTier",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address[]",
+            "name": "spAllowedTokens",
+            "type": "address[]"
+          },
+          {
+            "internalType": "address[]",
+            "name": "spAllowedNFTs",
+            "type": "address[]"
+          }
+        ],
+        "internalType": "struct LibVCTierStorage.VCNFTTier",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "arrayMaxSize",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "facetAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "enum IDiamondCut.FacetCutAction",
+            "name": "action",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes4[]",
+            "name": "functionSelectors",
+            "type": "bytes4[]"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IDiamondCut.FacetCut[]",
+        "name": "_diamondCut",
+        "type": "tuple[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_init",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes",
+        "name": "_calldata",
+        "type": "bytes"
+      }
+    ],
+    "name": "DiamondCut",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferredDiamond",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "Paused",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "Unpaused",
+    "type": "event"
+  }
+]

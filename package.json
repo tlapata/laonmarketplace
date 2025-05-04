@@ -1,0 +1,102 @@
+{
+  "name": "loan_market_frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build:prod": "react-scripts build",
+    "build:staging": "GENERATE_SOURCEMAP=false react-scripts --max_old_space_size=4096 build",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "eject": "react-scripts eject",
+    "format:check": "prettier --check --loglevel error 'src/**/*.{js,jsx,ts,tsx}'",
+    "format:write": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
+    "generate:config": "ts-node --compiler-options '{\"module\":\"commonjs\"}' scripts/generateConfig",
+    "watch": "watch 'npm start' ./src"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.5.6",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@material-ui/core": "^4.11.4",
+    "@mui/material": "^5.2.6",
+    "@popperjs/core": "^2.11.0",
+    "@radix-ui/react-checkbox": "^0.1.4",
+    "@radix-ui/react-dialog": "^0.1.5",
+    "@radix-ui/react-dropdown-menu": "^2.0.1",
+    "@radix-ui/react-switch": "^0.1.4",
+    "@radix-ui/react-tabs": "^0.1.4",
+    "@reduxjs/toolkit": "^1.5.1",
+    "@types/react-slick": "^0.23.8",
+    "@types/styled-components": "^5.1.9",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "bignumber.js": "^9.0.1",
+    "bootstrap": "^5.0.1",
+    "chart.js": "^3.7.1",
+    "date-fns": "^2.23.0",
+    "graphql": "^16.2.0",
+    "graphql-request": "^4.2.0",
+    "i18next": "^21.3.0",
+    "mobile-device-detect": "^0.4.3",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.0",
+    "react-chartjs-2": "^4.0.1",
+    "react-copy-to-clipboard": "^5.0.4",
+    "react-dom": "^17.0.2",
+    "react-fast-marquee": "^1.1.3",
+    "react-grid-carousel": "^1.0.1",
+    "react-helmet-async": "^1.0.9",
+    "react-hook-form": "^7.27.0",
+    "react-i18next": "^11.12.0",
+    "react-icons": "^4.2.0",
+    "react-popper": "^2.2.5",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-slick": "^0.28.1",
+    "react-switch": "^6.0.0",
+    "react-table": "^7.7.0",
+    "react-toastify": "^8.2.0",
+    "react-tooltip": "^4.2.21",
+    "redux-persist": "^6.0.0",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.8",
+    "styled-react-modal": "^2.1.0",
+    "styled-system": "^5.1.5",
+    "subscriptions-transport-ws": "^0.11.0",
+    "typescript": "^4.1.2",
+    "watch": "^1.0.2",
+    "web-vitals": "^1.0.1",
+    "web3": "^1.3.5",
+    "web3-core-helpers": "^1.3.6"
+  },
+  "devDependencies": {
+    "@types/react-router-dom": "^5.3.3",
+    "eslint": "^7.20.0",
+    "husky": "4.3.5",
+    "prettier": "^2.1.2",
+    "source-map-explorer": "^2.5.3",
+    "ts-node": "^9.1.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

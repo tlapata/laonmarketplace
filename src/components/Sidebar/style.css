@@ -1,0 +1,50 @@
+.sidenav {
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.sidenav a {
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 0px;
+}
+
+/*
+@media screen and (min-width: 2560px) {
+  .sidenav{
+    left:11.2%;
+    transform:translate(-11.2%,0);
+
+  }
+  .sidenav.active {
+    left:12.2%;
+    transform:translate(-12.2%,0);
+  }
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+    left:10%;
+    transform:translate(-10%,0);
+  }
+  .sidenav a {font-size: 18px;}
+}
+*/

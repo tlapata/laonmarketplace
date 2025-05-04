@@ -1,0 +1,12 @@
+
+/* Organetto Ultra Bold */
+@font-face {
+    font-family: 'Organetto Ultra Bold';
+    src: local('Organetto Ultra Bold'), url('Organetto-UltraBoldSemiExp.ttf');
+    }
+
+    /* Organetto Semi Bold */
+@font-face {
+    font-family: 'Organetto Semi Bold';
+    src: local('Organetto Semi Bold'), url('Organetto-BoldSemiExp.ttf');
+    }

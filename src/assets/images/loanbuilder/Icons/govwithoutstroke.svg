@@ -1,0 +1,22 @@
+<svg width="297" height="277" viewBox="0 0 297 277" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="130.909" y="146.727" width="24.4548" height="24.4548" rx="1.9493" transform="rotate(-45 130.909 146.727)" fill="url(#paint0_linear_1446_873)"/>
+<g filter="url(#filter0_i_1446_873)">
+<path d="M148.251 1.83791e-05C66.3906 -0.0161263 0.0162214 66.0295 2.83071e-06 147.517C-0.0104234 200.747 28.7815 249.856 75.345 276.028C76.7676 276.844 78.4613 277.053 80.0408 276.606C81.6094 276.171 82.9416 275.136 83.7479 273.728L129.469 193.293C131.145 190.338 130.101 186.589 127.133 184.917C106.307 173.273 98.9071 147.027 110.605 126.296C122.302 105.566 148.667 98.1989 169.493 109.843C190.319 121.488 197.719 147.733 186.021 168.463C182.134 175.354 176.415 181.047 169.493 184.917C166.526 186.589 165.481 190.338 167.158 193.293L212.755 273.728C213.559 275.141 214.892 276.18 216.462 276.618C217 276.774 217.557 276.853 218.118 276.852C219.184 276.851 220.231 276.575 221.158 276.052C292.454 236.011 317.643 146.017 277.418 75.0451C251.126 28.6563 201.758 -0.026505 148.251 1.83791e-05Z" fill="#6C6C6C"/>
+</g>
+<defs>
+<filter id="filter0_i_1446_873" x="0" y="0" width="296.573" height="300.898" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="40.0774"/>
+<feGaussianBlur stdDeviation="12.0232"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_1446_873"/>
+</filter>
+<linearGradient id="paint0_linear_1446_873" x1="131.16" y1="143.291" x2="155.971" y2="168.102" gradientUnits="userSpaceOnUse">
+<stop offset="0.375" stop-color="#BD0AF8"/>
+<stop offset="1" stop-color="#365CFC"/>
+</linearGradient>
+</defs>
+</svg>
