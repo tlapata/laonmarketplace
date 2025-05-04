@@ -194,7 +194,7 @@ const Chart = ({ loan, collateral }) => {
     const widgetOptions: ChartingLibraryWidgetOptions = {
       symbol: `${baseAddress?.toLowerCase()}-${stableCoin?.toLowerCase()}`,
       // tslint:disable-next-line:no-any
-      datafeed: JS_API_CALLBACKS, // new (window as any).Datafeeds.UDFCompatibleDatafeed('http://localhost:4001/charts'),
+      datafeed: JS_API_CALLBACKS,
       theme: "Dark",
       interval: "60" as ResolutionString,
       library_path: "../../assets/charting_library/",
